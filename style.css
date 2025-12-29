@@ -79,6 +79,7 @@ body{
     background-color: white;
     z-index: 10;
     border-bottom: 1px solid black;
+    view-transition-name: top-bar;
 }
 
 .bypass-logotype {
@@ -376,7 +377,6 @@ a:link {
     
 }
 
-
 .filter-item:hover .author {
     text-align: left;
     font-family: var(--menu-font-family);
@@ -403,6 +403,19 @@ a:link {
     color: blue;
     /*filter: blur(1px);*/
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
