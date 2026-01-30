@@ -79,6 +79,7 @@ body{
     background-color: white;
     z-index: 10;
     border-bottom: 1px solid black;
+    view-transition-name: top-bar;
 }
 
 .bypass-logotype {
@@ -291,7 +292,7 @@ a:link {
 
 .filter-item {
     border-top: #cecece solid 0.5px;
-   
+    
     display: grid;
     grid-template-columns: repeat(10, minmax(0, 1fr));
     grid-gap: 0.3rem 0.6rem;
@@ -376,7 +377,6 @@ a:link {
     
 }
 
-
 .filter-item:hover .author {
     text-align: left;
     font-family: var(--menu-font-family);
@@ -394,6 +394,7 @@ a:link {
     font-style: var(--menu-font-style);
     font-size: var(--font-size-large);
     color: var(--primary-color);
+    
 }
 
 .filter-item:hover .title {
@@ -403,6 +404,29 @@ a:link {
     color: blue;
     /*filter: blur(1px);*/
 }
+
+.filter-item .list-description {
+    grid-column: 2/span 8;
+    text-align: left;
+    font-family: var(--menu-font-family);
+    font-style: var(--menu-font-style);
+    font-size: var(--font-size-medium);
+    font-weight: 300;
+    color: var(--primary-color);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

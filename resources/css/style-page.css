@@ -23,7 +23,7 @@
     width: 100%;
         max-width: 100%;
         overflow-x: hidden;
-        margin-top: 120px;
+        margin-top: 115px;
         
         padding-bottom: 30px;
 
@@ -132,4 +132,15 @@ svg  {
     display: flex;
     flex-direction: column;
    }
+}
+
+
+
+.newsletter-horizontal-scroll {
+
+    grid-column: 1 / span 6; 
+    grid-row: 1 / span 1; 
+    height: fit-content;
+
+    
 }

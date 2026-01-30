@@ -1,0 +1,60 @@
+.top-bar {
+    height: min-content;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 10;
+    border-bottom: 1px solid black;
+}
+
+.menu-page-description {
+    float: right;
+    font-weight: 300;
+    margin-right: 0;
+    cursor: default;
+}
+
+
+
+.project-page {
+    z-index: 1;
+    
+    position: relative;
+    width: 100%;
+        max-width: 100%;
+        margin-top: 115px;
+        padding-bottom: 30px;
+
+   
+
+
+}
+
+
+
+
+.horizontal-scroll-wrapper {
+  display: block;
+  top: 0;
+  left: 0;
+  width: calc(100vh - 250px); /* also change div img { */
+  height: calc(100vw -60px);
+  margin: 0;
+  
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg) ;
+  
+  & > div {
+    display: block;
+    transform: rotate(90deg);
+    transform-origin: right top;
+    
+  }
+
+  & > div img {
+    height: calc(100vh - 250px);
+    transform: translateX(600px);
+}
+}
+
