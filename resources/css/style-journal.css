@@ -1,0 +1,142 @@
+
+
+
+/* filters */
+
+
+/* MENU 2 */
+
+.menu-2 {
+    width: 75%;
+    font-family: var(--menu-font-family);
+    font-style: var(--menu-font-style);
+    font-size: var(--font-size-medium);
+    padding-bottom: 20px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+#menu-selected {
+    text-decoration: underline;
+    cursor: default;
+    pointer-events: none;
+}
+
+
+#menu-selected:hover {
+    cursor: default;
+    pointer-events: none;
+    color: var(--primary-color);
+}
+
+/* The container */
+.container-new {
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 5px ;
+    display: flex; 
+align-items: center;
+    cursor: pointer;
+    width: 120px;
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+  }
+  
+  /* Hide the browser's default radio button */
+  .container-new input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    vertical-align: middle;
+    left: 0;
+    
+    height: calc(var(--font-size-medium) - 0.1rem) ;
+    width: calc(var(--font-size-medium) - 0.1rem);
+    border: solid 1px black;
+    box-sizing: border-box;
+
+  }
+
+  .checkbox-label {
+    font-family: var(--menu-font-family);
+    font-style: var(--menu-font-style);
+    font-size: var(--font-size-medium);
+    padding-right: 30px;
+  }
+  
+ /* On mouse-over, add a #808080 background color */
+.container-new:hover input~.checkmark {
+    background-color: rgb(128, 128, 128);
+}
+  
+  /* When the radio button is checked, add a blue background */
+  .container-new input:checked ~ .checkmark {
+    background-color: blue;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container-new input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container-new .checkmark:after {
+       
+      background: white;
+  }
+  
+  
+  /* FILTERED ELEMENTS (POSTS)
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  
+  
+  .posts .post {
+    display: none;
+  }
+  
+  
+  /* FILTERING RULES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  *:has([value="all"]:checked) .filters [for="all"],
+  *:has([value="essay"]:checked) .filters [for="essay"],
+  *:has([value="podcast"]:checked) .filters [for="podcast"],
+  *:has([value="project"]:checked) .filters [for="project"],
+  *:has([value="newsletter"]:checked) .filters [for="newsletter"],
+  *:has([value="editorial"]:checked) .filters [for="editorial"],
+  *:has([value="interview"]:checked) .filters [for="interview"] {
+    background: var(--green);
+    color: var(--white);
+  }
+  
+  *:has([value="all"]:checked) .posts [data-category],
+  :has([value="essay"]:checked) .posts [data-category~="essay"],
+  *:has([value="podcast"]:checked) .posts [data-category~="podcast"],
+  *:has([value="project"]:checked) .posts [data-category~="project"],
+  *:has([value="newsletter"]:checked) .posts [data-category~="newsletter"],
+  *:has([value="editorial"]:checked) .posts [data-category~="editorial"],
+  *:has([value="interview"]:checked) .posts [data-category~="interview"] {
+    display: block;
+  }
+
+
+
+

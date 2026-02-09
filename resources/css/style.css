@@ -45,9 +45,9 @@ body{
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
-    border-top: 30px solid white; 
-    border-left: 30px solid white; 
-    border-right: 30px solid white; 
+    border-top: 30px solid var(--bg-color); 
+    border-left: 30px solid var(--bg-color); 
+    border-right: 30px solid var(--bg-color); 
     z-index: 9999;
     pointer-events: none; 
   }
@@ -146,7 +146,7 @@ svg polygon:hover {
     visibility: hidden;
 }
 
-.hover-title:hover .hover-image{
+.post:hover .hover-image{
     visibility: visible;
 }
 
@@ -185,14 +185,9 @@ svg polygon:hover {
     color: blue;
 }
 
-#menu-selected {
-    text-decoration: underline;
-    cursor: default;
-}
 
-.menu-1  #menu-selected:hover a {
-    color: var(--primary-color);
-}
+
+
 
  #bypass-b {
     position: absolute;
@@ -247,7 +242,7 @@ a:link {
     
     font-size: 1em;
     box-sizing: border-box;
-    padding-top: 115px;
+    
     
 
 }
@@ -419,6 +414,47 @@ a:link {
 
 
 
+#list-temp-off {
+    color: grey;
+
+}
+    
+
+
+
+#list-temp-off .year  {
+    color: grey;
+}
+#list-temp-off .author  {
+    color: grey;
+}
+#list-temp-off .title  {
+    color: grey;
+}
+#list-temp-off .category  {
+    color: grey;
+}
+
+#list-temp-off .filter-item:hover .title {
+    font-family: var(--menu-font-family);
+    font-style: var(--menu-font-style);
+    font-size: var(--font-size-large);
+}
+
+#list-temp-off {
+    pointer-events: none;
+    cursor:pointer;
+}
+
+#list-temp-off .filter-item:hover {
+    pointer-events: none;
+    cursor:pointer;
+    
+}
+
+ #list-temp-off .hover-image {
+    display: none;
+ }
 
 
 

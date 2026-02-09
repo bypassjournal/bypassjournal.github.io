@@ -28,7 +28,7 @@
         padding-bottom: 30px;
 
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 50px;
     gap: 30px;
 
@@ -41,59 +41,109 @@
 
 .logotype-container {
     animation: size-change linear both 1s ;
-	animation-timeline: --logo-size;
+	animation-timeline: scroll();
     width: 250px;
 }
 
 
 @keyframes size-change {
-	-15%  { width: 300px; }
-    15% { width: 260px; }
-	25% { width: 220px; }
-	50% { width: 180px;  }
-	75% { width: 150px; }
-    99% { width: 150px; }
+	0%  { width: 250px; }
+    
+    80% { width: 150px; }
+    100% { width: 150px; }
 }
 
 
 .menu-1 {
     
     animation: menu-font-change linear both 1s ;
-    animation-timeline: --logo-size;
+    animation-timeline: scroll();
     
 }
 
 @keyframes menu-font-change {
-	-15%{ color: var(--primary-color); height: auto; margin-top: 20px; }
+	0%{ color: var(--primary-color); height: auto; margin-top: 20px; }
     15% { color: var(--primary-color); height: auto; margin-top: 20px; }
 	25% { margin-top: 10px;}
 	50% {  height: 10px; margin-top: 5px; pointer-events: none; color: white; }
 	75% {  height: 5px; margin-top: 0px; color: white; }
-    99% { height: 0px; margin-top: 0px; color: white;}
+    90% { height: 0px; margin-top: 0px; color: white;}
+    100% { height: 0px; margin-top: 0px; color: white;}
 }
 
 
 .menu-link a {
     
     animation: menu-link-change linear both 1s ;
-    animation-timeline: --logo-size;
+    animation-timeline: scroll();
     
 }
 
 
 
 @keyframes menu-link-change {
-	-15%{ pointer-events: all; color: var(--primary-color);}
+	0%{ pointer-events: all; color: var(--primary-color);}
     15% { pointer-events: all; color: var(--primary-color); }
 	25% { pointer-events: all; }
 	50% { pointer-events: none; color: white;}
 	75% { pointer-events: none; color: white;}
-    99% { pointer-events: none;color: white;}
+    100% { pointer-events: none;color: white;}
+}
+
+.menu-1  .menu-link:hover a {
+    color: blue;
+}
+
+.menu-link:hover a {
+    
+    animation: menu-link-change-hover linear both 1s ;
+    animation-timeline: scroll();
+    
+}
+
+
+@keyframes menu-link-change-hover {
+	0%{ pointer-events: all; color: blue;}
+    15% { pointer-events: all; color: blue; }
+	25% { pointer-events: all; }
+	50% { pointer-events: none; color: white;}
+	75% { pointer-events: none; color: white;}
+    100% { pointer-events: none;color: white;}
 }
 
 
 
 
+/* WRAPPER
+.wrapper {
+    animation: background-colour-change linear both 1s ;
+    animation-timeline: scroll();
+    
+
+    }
+  
+
+
+@keyframes background-colour-change {
+	
+    0% { background-color: white;}
+    75% { background-color: black;}
+    100% { background-color: black;}
+
+}
+
+body {
+    color: white;
+}
+
+
+body {
+    animation: body-colour-change linear both 1s ;
+    animation-timeline: scroll();
+    
+
+    }
+ WRAPPER end */
 
 
 
@@ -143,4 +193,20 @@ svg  {
     height: fit-content;
 
     
+}
+
+
+
+.project-header {
+    font-family: var(--menu-font-family);
+    font-weight: 300;
+    font-size: var(--font-size-medium);
+    color: var(--primary-color);
+}
+
+.project-details {
+    font-family: var(--menu-font-family);
+    font-weight: 300;
+    font-size: var(--font-size-medium);
+    color: var(--primary-color);
 }

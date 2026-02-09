@@ -20,6 +20,8 @@
   <title>Bypass</title>
   <meta name="description" content="Bypass Journal is a platform for exploring alternative approaches to architecture.">
   <link rel="stylesheet" href="resources/css/style.css" /> 
+  <script src="resources/javascript/index.js"></script>
+ 
 
   <link rel="apple-touch-icon" sizes="180x180" href="resources/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="resources/images/favicon-32x32.png">
@@ -74,11 +76,11 @@
       <li class="menu-link">
         <a href="/journal">Journal</a>
       </li>
-      <li class="menu-link">
-        <a href="/space">Space</a>
+      <li class="menu-link" >
+        <a id="list-temp-off" href="/work">Work</a>
       </li>
       <li class="menu-link">
-        <a href="/shop">Shop</a>
+        <a id="list-temp-off"  href="/shop">Shop</a>
       </li>
       <li class="menu-link">
         <a  href="about">About</a>
@@ -93,24 +95,41 @@
   <div class="filter-wrap">
 
       <!--UNDER CONSTRUCTION-->
-    <a  data-year="2026" data-category="editorial"  style="display: block; ">
+    <a  data-year="2026" data-category="editorial"  >
       <div class="filter-item" style="pointer-events: none; cursor:pointer;  " >
-        <div style="color: grey"  class="year">2025</div>
+        <div style="color: grey"  class="year">2026</div>
         <div class="info">
           <div style="color: grey"  class="author">Bypass</div>
           <div style="color: grey" class="category">Update</div>
         </div>
         <div style="color: grey" class="title">Website Under Construction</div>
-        <div style="color: grey" class="list-description">We're currently transferring our content to this new site, so some pages may be unavailable.</div>
+        <div style="color: grey" class="list-description">We're currently transferring our content to this new site, so some pages may be temporarily unavailable.</div>
       </div>
       <div class="hover-image"><img src="" alt=""></div>
     </a>
 
-    <!--BLINK OF CARE-->
-    <a class="hover-title" data-year="2023" data-category="editorial" href="https://bypassjournal.com/blink-of-care"
-      style="display: block;">
+
+       <!--JOURNAL / A FAILED ROOF-->
+    <a class="post" data-year="2025" data-category="Essay" href="/a-failed-roof"
+      >
       <div class="filter-item">
-        <div class="year">2023</div>
+        <div class="year">2025</div>
+        <div class="info">
+          <div class="author">Oliver Ray-Chaudhuri</div>
+          <div class="category">Essay</div>
+        </div>
+        <div class="title">A Failed Roof</div>
+      </div>
+      <div class="hover-image" style="border: black solid 1px;"><img src="resources/images/HOME/a-failed-roof-home.jpg" alt=""></div>
+    </a>
+
+
+
+    <!--JOURNAL / BLINK OF CARE-->
+    <a  class="post" data-year="2023" data-category="Essay" "
+       id="list-temp-off">
+      <div class="filter-item">
+        <div class="year" >2023</div>
         <div class="info">
           <div class="author">Philip Lee</div>
           <div class="category">Essay</div>
@@ -121,8 +140,8 @@
     </a>
 
 
-    <!--JUST ANOTHER ARCHI KID-->
-    <a class="hover-title" data-year="2022" data-category="podcast" href="https://bypassjournal.com/Podcast#:~:text=Just%20another%20archi%20kid." style="display: block;">
+    <!-- JOURNAL / JUST ANOTHER ARCHI KID-->
+    <a id="list-temp-off"  class="post" data-year="2022" data-category="podcast" href="https://bypassjournal.com/Podcast#:~:text=Just%20another%20archi%20kid." >
     <div class="filter-item">
       <div class="year">2022</div>
       <div class="info">
@@ -131,12 +150,12 @@
       </div>
       <div class="title">Just Another Archi Kid</div>
     </div>
-    <div class="hover-image"> </div>
+    <div class="hover-image"><img src="resources/images/HOME/justanotherarchikidFF-1.jpg" alt=""> </div>
   </a>
 
-    <!--MY BACH IS A $10 RED-->
-    <a class="hover-title" data-year="2022" data-category="podcast"
-      href="https://bypassjournal.com/Podcast#:~:text=My%20Bach%20is%20a%20%2410%20Red." style="display: block;">
+    <!-- JOURNAL / MY BACH IS A $10 RED-->
+    <a id="list-temp-off"  class="post" data-year="2022" data-category="podcast"
+      href="https://bypassjournal.com/Podcast#:~:text=My%20Bach%20is%20a%20%2410%20Red."  >
       <div class="filter-item">
         <div class="year">2022</div>
         <div class="info">
@@ -145,13 +164,13 @@
         </div>
         <div class="title">My Bach is a $10 Red</div>
       </div>
-      <div class="hover-image"><!--insert image here--></div>
+      <div class="hover-image"><img src="resources/images/HOME/Bach---Nightclub.gif" alt=""></div>
     </a>
 
 
 
-    <!--REFLECTING ON OUR FIRST YEAR AND WHAT'S TO COME-->
-    <a class="hover-title" data-year="2022" data-category="editorial" href="Bypass-Editorial">
+    <!-- JOURNAL / REFLECTING ON OUR FIRST YEAR AND WHAT'S TO COME-->
+    <a id="list-temp-off"  class="post" data-year="2022" data-category="editorial" href="Bypass-Editorial">
       <div class="filter-item">
         <div class="year">2022</div>
         <div class="info">
@@ -160,11 +179,11 @@
         </div>
         <div class="title">Reflecting on Our First Year and What’s to Come</div>
       </div>
-      <div class="hover-image"><!--insert image here--></div>
+      <div class="hover-image"><img src="resources/images/HOME/EditorsL_illu2_NB.png" alt=""></div>
     </a>
 
-    <!--HUG?-->
-    <a class="hover-title" data-year="2022" data-category="project" href="Hug">
+    <!-- JOURNAL / HUG?-->
+    <a id="list-temp-off"  class="post" data-year="2022" data-category="project" href="Hug">
       <div class="filter-item">
         <div class="year">2022</div>
         <div class="info">
@@ -173,13 +192,13 @@
         </div>
         <div class="title">Hug?</div>
       </div>
-      <div class="hover-image"><!--insert image here--></div>
+      <div class="hover-image"><img src="resources/images/HOME/jwu-home.gif" alt=""></div>
     </a>
 
-    <!--LIVE ENVIRONMENTS-->
-    <a class="hover-title" data-year="2022" data-category="podcast"
+    <!-- JOURNAL / LIVE ENVIRONMENTS-->
+    <a id="list-temp-off"  class="post" data-year="2022" data-category="podcast"
       href="https://bypassjournal.com/Podcast#:~:text=EPISODE%20THREE-,Live%20Environments.,-If%20these%20walls"
-      style="display: block;">
+       >
       <div class="filter-item">
         <div class="year">2022</div>
         <div class="info">
@@ -188,12 +207,12 @@
         </div>
         <div class="title">Live Environments</div>
       </div>
-      <div class="hover-image"><!--insert image here--></div>
+      <div class="hover-image"><img src="resources/images/HOME/grinning-building.gif" alt=""></div>
     </a>
 
 
-    <!--A PLEASURABLE METHODOLOGY-->
-    <a class="hover-title" data-year="2021" data-category="project" href="A-Pleasurable-Methodology">
+    <!-- JOURNAL / A PLEASURABLE METHODOLOGY-->
+    <a id="list-temp-off"  class="post" data-year="2021" data-category="project" href="A-Pleasurable-Methodology">
       <div class="filter-item">
         <div class="year">2021</div>
         <div class="info">
@@ -202,11 +221,11 @@
         </div>
         <div class="title">A Pleasurable Methodology: Cultivating with Waiatarua</div>
       </div>
-      <div class="hover-image"><!--insert image here--></div>
+      <div class="hover-image"><img src="resources/images/HOME/bhaveeka-painting.jpg" alt=""></div>
     </a>
 
-    <!--JOY AS AN ACT OF RESISTANCE-->
-    <a class="hover-title" data-year="2021" data-category="project" href="bypass/Joy-as-an-Act-of-Resistance">
+    <!-- JOURNAL / JOY AS AN ACT OF RESISTANCE-->
+    <a  class="post" data-year="2021" data-category="project" href="/joy-as-an-act-of-resistance">
       <div class="filter-item">
         <div class="year">2021</div>
         <div class="info">
@@ -215,13 +234,13 @@
         </div>
         <div class="title">Joy As an Act of Resistance</div>
       </div>
-      <div class="hover-image"><!--insert image here--></div>
+      <div class="hover-image"><img src="resources/images/HOME/wmart-home.jpg" alt=""></div>
     </a>
 
-    <!--DOWN TO EARTH-->
-    <a class="hover-title" data-year="2021" data-category="podcast"
+    <!-- JOURNAL / DOWN TO EARTH-->
+    <a id="list-temp-off"  class="post" data-year="2021" data-category="podcast"
       href="https://bypassjournal.com/Podcast#:~:text=EPISODE%20TWO-,Down%20to%20Earth.,-This%20Episode%20is"
-      style="display: block;">
+       >
       <div class="filter-item">
         <div class="year">2021</div>
         <div class="info">
@@ -230,11 +249,11 @@
         </div>
         <div class="title">Down to Earth</div>
       </div>
-      <div class="hover-image"><!--insert image here--></div>
+      <div class="hover-image"><img src="resources/images/HOME/egg-cracked.gif" alt=""></div>
     </a>
 
-    <!--COMBOBULATION STATION-->
-     <a class="hover-title" data-year="2021" data-category="project" href="Combobulation-Station">
+    <!-- JOURNAL / COMBOBULATION STATION-->
+     <a id="list-temp-off"  class="post" data-year="2021" data-category="project" href="Combobulation-Station">
       <div class="filter-item">
         <div class="year">2021</div>
         <div class="info">
@@ -243,11 +262,11 @@
         </div>
         <div class="title">Combobulation Station: Architecture, Climate Change and Dysphoria</div>
       </div>
-      <div class="hover-image"><!--insert image here--></div>
+      <div class="hover-image"><img src="resources/images/HOME/nteh-home.jpg" alt=""></div>
     </a>
 
-    <!--PASTICHE-->
-    <a class="hover-title" data-year="2021" data-category="project" href="Pastiche">
+    <!-- JOURNAL / PASTICHE-->
+    <a id="list-temp-off"  class="post" data-year="2021" data-category="project" href="Pastiche">
       <div class="filter-item">
         <div class="year">2021</div>
         <div class="info">
@@ -256,11 +275,11 @@
         </div>
         <div class="title">Pastiche</div>
       </div>
-      <div class="hover-image"><!--insert image here--></div>
+      <div class="hover-image"><img src="resources/images/HOME/ryu-home.jpg" alt=""></div>
     </a>
 
-    <!--COMMUNITY CHEST-->
-    <a class="hover-title" data-year="2021" data-category="podcast" href="Podcast">
+    <!-- JOURNAL / COMMUNITY CHEST-->
+    <a id="list-temp-off"  class="post" data-year="2021" data-category="podcast" href="Podcast">
       <div class="filter-item year-2021 category-podcast">
         <div class="year">2021</div>
         <div class="info">
@@ -269,11 +288,11 @@
         </div>
         <div class="title">Podcast Launch: Community Chest</div>
       </div>
-      <div class="hover-image"><!--insert image here--></div>
+      <div class="hover-image"><img src="resources/images/HOME/bypass-b-ee.gif" alt=""></div>
     </a>
 
-    <!--PERFORM THE HOUSE DOWN-->
-    <a class="hover-title" data-year="2021" data-category="project" href="Perform-the-House-Down">
+    <!-- JOURNAL / PERFORM THE HOUSE DOWN-->
+    <a id="list-temp-off"  class="post" data-year="2021" data-category="project" href="Perform-the-House-Down">
       <div class="filter-item">
         <div class="year">2021</div>
         <div class="info">
@@ -282,11 +301,11 @@
         </div>
         <div class="title">Perform the House Down</div>
       </div>
-      <div class="hover-image"><!--insert image here--></div>
+      <div class="hover-image"><img src="resources/images/HOME/this-aint-auckland.png" alt=""></div>
     </a>
 
-    <!--SEAL THEORY-->
-    <a class="hover-title" data-year="2021" data-category="project" href="Seal-Theory">
+    <!-- JOURNAL / SEAL THEORY-->
+    <a id="list-temp-off"  class="post" data-year="2021" data-category="project" href="Seal-Theory">
       <div class="filter-item">
         <div class="year">2021</div>
         <div class="info">
@@ -295,149 +314,226 @@
         </div>
         <div class="title">Seal Theory</div>
       </div>
-      <div class="hover-image"><!--insert image here--></div>
+      <div class="hover-image"><img src="resources/images/HOME/Seal-Icon.png" alt=""></div>
     </a>
 
-    <!--PRIORI-->
-    <a class="hover-title" data-year="2021" data-category="interview" href="Priori">
+    <!-- JOURNAL / PRIORI-->
+    
+    <a id="list-temp-off"  class="post" data-year="2021" data-category="interview" >
       <div class="filter-item">
         <div class="year">2021</div>
-        <div class="author">Binh Minh Ha</div>
-        <div class="piece">A12 x Joon Yang: Priori</div>
+        <div class="info">
+          <div class="author">Binh Minh Ha</div>
+          <div class="category">Interview</div>
+        </div>
+        <div class="title">A12 x Joon Yang: Priori</div>
       </div>
-      <div class="hover-image">{image 16}</div>
+      <div class="hover-image"><img src="resources/images/HOME/Priori.jpg" alt=""></div>
     </a>
 
-    <!--BETWEEN THE SHEETS-->
-    <a class="hover-title" data-year="2021" data-category="project" href="Between-the-Sheets">
+    <!-- JOURNAL / BETWEEN THE SHEETS-->
+
+    <a id="list-temp-off"  class="post" data-year="2021" data-category="project" >
       <div class="filter-item">
         <div class="year">2021</div>
-        <div class="author">Pansy Ou</div>
-        <div class="piece">Between the Sheets</div>
+        <div class="info">
+          <div class="author">Pansy Ou</div>
+          <div class="category">Project</div>
+        </div>
+        <div class="title">Between the Sheets</div>
       </div>
-      <div class="hover-image">{image 17}</div>
+      <div class="hover-image"><img src="resources/images/HOME/flying-cats.png" alt=""></div>
     </a>
 
-    <!--SIT WITH ME AND YOU'LL UNDERSTAND-->
-    <a class="hover-title" data-year="2021" data-category="project" href="Sit-With-Me-and-You-ll-Understand">
+
+
+
+    <!-- JOURNAL / SIT WITH ME AND YOU'LL UNDERSTAND-->
+    <a id="list-temp-off"  class="post" data-year="2021" data-category="project" >
       <div class="filter-item">
         <div class="year">2021</div>
-        <div class="author">Donna Luo</div>
-        <div class="piece">Sit With Me and You’ll Understand</div>
+        <div class="info">
+          <div class="author">Donna Luo</div>
+          <div class="category">Project</div>
+        </div>
+        <div class="title">Sit With Me and You’ll Understand</div>
       </div>
-      <div class="hover-image">{image 18}</div>
+      <div class="hover-image"><img src="resources/images/HOME/kereru.png" alt=""></div>
     </a>
 
-    <!--BUILDING 314-->
-    <a class="hover-title" data-year="2021" data-category="project" href="Building-314-A-Free-School-Within-School">
+
+    <!-- JOURNAL / BUILDING 314 href="Building-314-A-Free-School-Within-School" -->
+    <a id="list-temp-off"  class="post" data-year="2021" data-category="project" >
       <div class="filter-item">
         <div class="year">2021</div>
-        <div class="author">Maxine Goon</div>
-        <div class="piece">Building 314: A Free School Within School</div>
+        <div class="info">
+          <div class="author">Maxine Goon</div>
+          <div class="category">Project</div>
+        </div>
+        <div class="title">Building 314: A Free School Within School</div>
       </div>
-      <div class="hover-image">{image 19}</div>
+      <div class="hover-image"><img src="resources/images/HOME/UNITE_HOVER.png" alt=""></div>
+    </a>
+    
+
+    <!-- JOURNAL / TURANGAWAEWAE href="Turangawaewae" -->
+    <a id="list-temp-off"  class="post" data-year="2021" data-category="project" >
+      <div class="filter-item">
+        <div class="year">2021</div>
+        <div class="info">
+          <div class="author">Leith Macfarlane</div>
+          <div class="category">Project</div>
+        </div>
+        <div class="title">Tūrangawaewae</div>
+      </div>
+      <div class="hover-image"><img src="resources/images/HOME/tower-home.jpeg" alt=""></div>
     </a>
 
-    <!--TURANGAWAEWAE-->
-    <a class="hover-title" data-year="2021" data-category="project" href="Turangawaewae">
+
+
+     <!-- JOURNAL / NEWSLETTER 03 -->
+    <a  class="post" data-year="2021" data-category="newsletter" href="/newsletter-03" >
       <div class="filter-item">
-        <div class="year">2021 07 05</div>
-        <div class="author">Leith Macfarlane</div>
-        <div class="piece">Tūrangawaewae</div>
+        <div class="year">2021</div>
+        <div class="info">
+          <div class="author">Bypass</div>
+          <div class="category">Newsletter</div>
+        </div>
+        <div class="title">Newsletter 03</div>
       </div>
-      <div class="hover-image">{image 20}</div>
+      <div class="hover-image"><img src="resources/images/HOME/newsletter-03-home.jpg" alt=""></div>
     </a>
 
-    <!--THE DAYS ARE LONG-->
-    <a class="hover-title" data-year="2021" data-category="editorial" href="The-Days-Are-Long">
+
+    <!-- JOURNAL / THE DAYS ARE LONG href="The-Days-Are-Long" -->
+    <a id="list-temp-off"  class="post" data-year="2021" data-category="essay" >
       <div class="filter-item">
-        <div class="year">2021 05 21</div>
-        <div class="author">Oliver Ray-Chaudhuri</div>
-        <div class="piece">the days are long</div>
+        <div class="year">2021</div>
+        <div class="info">
+          <div class="author">Oliver Ray-Chaudhuri</div>
+          <div class="category">Project</div>
+        </div>
+        <div class="title">the days are long</div>
       </div>
-      <div class="hover-image">{image 21}</div>
+      <div class="hover-image"><img src="resources/images/HOME/oray-home.png" alt=""></div>
     </a>
 
-    <!--SOLAR DESALINATION SKYLIGHT-->
-    <a class="hover-title" data-year="2021" data-category="project" href="Solar-Desalination">
+
+
+    <!-- JOURNAL / SOLAR DESALINATION SKYLIGHT href="Solar-Desalination" -->
+    <a id="list-temp-off"  class="post" data-year="2021" data-category="project" >
       <div class="filter-item">
-        <div class="year">2021 05 21</div>
-        <div class="author">Henry Glogau</div>
-        <div class="piece">Solar Desalination Skylight and Portable Solar Distiller</div>
+        <div class="year">2021</div>
+        <div class="info">
+          <div class="author">Henry Glogau</div>
+          <div class="category">Project</div>
+        </div>
+        <div class="title">Solar Desalination Skylight and Portable Solar Distiller</div>
       </div>
-      <div class="hover-image">{image 22}</div>
+      <div class="hover-image"><img src="resources/images/HOME/glogau-home.png" alt=""></div>
     </a>
 
-    <!--CLOSET WRITING-->
-    <a class="hover-title" data-year="2021" data-category="editorial" href="Closet-Writing">
+    <!-- JOURNAL / CLOSET WRITING href="Closet-Writing" -->
+    <a id="list-temp-off"  class="post" data-year="2021" data-category="essay" >
       <div class="filter-item">
-        <div class="year">2021 05 21</div>
-        <div class="author">Evija Trofimova</div>
-        <div class="piece">Closet writing</div>
+        <div class="year">2021</div>
+        <div class="info">
+          <div class="author">Evija Trofimova</div>
+          <div class="category">Essay</div>
+        </div>
+        <div class="title">Closet writing</div>
       </div>
-      <div class="hover-image">{image 23}</div>
+      <div class="hover-image"><img src="resources/images/HOME/trofimova_clip_image.png" alt=""></div>
     </a>
 
-    <!--ROOM FOR RELLIES-->
-    <a class="hover-title" data-year="2021" data-category="project" href="Room-for-Rellies">
+    <!-- JOURNAL / ROOM FOR RELLIES href="Room-for-Rellies" -->
+    <a id="list-temp-off"  class="post" data-year="2021" data-category="project" >
       <div class="filter-item">
-        <div class="year">2021 04 16</div>
-        <div class="author">Karl Poland</div>
-        <div class="piece">Room for Rellies</div>
+        <div class="year">2021</div>
+        <div class="info">
+          <div class="author">Karl Poland</div>
+          <div class="category">Project</div>
+        </div>
+        <div class="title">Room for Rellies</div>
       </div>
-      <div class="hover-image">{image 24}</div>
+      <div class="hover-image"><img src="resources/images/HOME/Wattie-s-abstraction-2.png" alt=""></div>
     </a>
 
-    <!--RUGGED HEART-->
-    <a class="hover-title" data-year="2021" data-category="interview" href="Rugged-Heart">
+    <!-- JOURNAL / RUGGED HEART href="Rugged-Heart" -->
+    <a id="list-temp-off"  class="post" data-year="2021" data-category="interview" >
       <div class="filter-item">
-        <div class="year">2021 04 16</div>
-        <div class="author">Binh Minh Ha</div>
-        <div class="piece">Claudia Kogachi: Rugged Heart</div>
+        <div class="year">2021</div>
+        <div class="info">
+          <div class="author">Binh Minh Ha</div>
+          <div class="category">Interview</div>
+        </div>
+        <div class="title">Claudia Kogachi: Rugged Heart</div>
       </div>
-      <div class="hover-image">{image 25}</div>
+      <div class="hover-image"><img src="resources/images/HOME/kogachi-home.png" alt=""></div>
     </a>
 
-    <!--IDENTITY AND DISCOURSE-->
-    <a class="hover-title" data-year="2021" data-category="editorial" href="Identity-and-Discourse">
+
+
+
+
+    <!-- JOURNAL / IDENTITY AND DISCOURSE href="Identity-and-Discourse" -->
+    <a id="list-temp-off"  class="post" data-year="2021" data-category="essay" >
       <div class="filter-item">
-        <div class="year">2021 04 16</div>
-        <div class="author">Ethan Yu-Teng Chung</div>
-        <div class="piece">identity and discourse</div>
+        <div class="year">2021</div>
+        <div class="info">
+          <div class="author">Ethan Yu-Teng Chung</div>
+          <div class="category">Essay</div>
+        </div>
+        <div class="title">identity and discourse</div>
       </div>
-      <div class="hover-image">{image 26}</div>
+      <div class="hover-image"><img src="resources/images/HOME/Bypassman2.png" alt=""></div>
     </a>
 
-    <!--FUTURE PROOFING WITH PEGGY DEAMER-->
-    <a class="hover-title" data-year="2021" data-category="interview" href="Future-Proofing-with-Peggy-Deamer">
+    <!-- JOURNAL / FUTURE PROOFING WITH PEGGY DEAMER href="Future-Proofing-with-Peggy-Deamer" -->
+    <a id="list-temp-off"  class="post" data-year="2021" data-category="interview" >
       <div class="filter-item">
-        <div class="year">2021 03 19</div>
-        <div class="author">Connor Hanna</div>
-        <div class="piece">Future Proofing with Peggy Deamer</div>
+        <div class="year">2021</div>
+        <div class="info">
+          <div class="author">Connor Hanna</div>
+          <div class="category">Interview</div>
+        </div>
+        <div class="title">Future Proofing with Peggy Deamer</div>
       </div>
-      <div class="hover-image">{image 27}</div>
+      <div class="hover-image"><img src="resources/images/HOME/CH3.png" alt=""></div>
     </a>
 
-    <!--PLANTATION 1-->
-    <a class="hover-title" data-year="2021" data-category="project" href="Plantation-1">
+
+
+
+    <!-- JOURNAL / PLANTATION 1 href="Plantation-1" -->
+    <a id="list-temp-off"  class="post" data-year="2021" data-category="project" >
       <div class="filter-item">
-        <div class="year">2021 03 19</div>
-        <div class="author">Carl Douglas</div>
-        <div class="piece">Plantation 1</div>
+        <div class="year">2021</div>
+        <div class="info">
+          <div class="author">Carl Douglas</div>
+          <div class="category">Project</div>
+        </div>
+        <div class="title">Plantation 1</div>
       </div>
-      <div class="hover-image">{image 28}</div>
+      <div class="hover-image"><img src="resources/images/HOME/plantation1_transparent.png" alt=""></div>
     </a>
 
-    <!--GROUND-->
-    <a class="hover-title" data-year="2021" data-category="project" href="GROUND">
+    <!--GROUND href="GROUND" -->
+    <a id="list-temp-off"  class="post" data-year="2021" data-category="project" >
       <div class="filter-item">
-        <div class="year">2021 03 19</div>
-        <div class="author">Mika O’Brien-Ramp</div>
-        <div class="piece">GROUND</div>
+        <div class="year">2021</div>
+        <div class="info">
+          <div class="author">Mika O’Brien-Ramp</div>
+          <div class="category">Project</div>
+        </div>
+        <div class="title">GROUND</div>
       </div>
-      <div class="hover-image">{image 29}</div>
+      <div class="hover-image"><img src="resources/images/HOME/meadow_-axo_noback.png" alt=""></div>
     </a>
+
+  
   </div><br>
+  
 
 </div>
 
