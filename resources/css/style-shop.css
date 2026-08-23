@@ -142,6 +142,13 @@ svg polygon:hover {
     width: 100%;
 }
 
+.hover-image video {
+
+    height: 100%;
+    width: 100%;
+    border: black 1px solid;
+}
+
 .hover-image {
     visibility: hidden;
 }
@@ -149,6 +156,9 @@ svg polygon:hover {
 .post:hover .hover-image{
     visibility: visible;
 }
+
+
+
 
 /* MENU 1 */
 
@@ -301,7 +311,7 @@ a:link {
 
 
 .filter-item {
-    border-top: #cecece solid 0.5px;
+    
     
     display: grid;
     grid-template-columns: repeat(10, minmax(0, 1fr));
@@ -318,7 +328,7 @@ a:link {
 .shop-image {
   
   grid-column: 1/span 10;
-  
+  border: 1px solid transparent;
 
   
 }
@@ -327,9 +337,20 @@ a:link {
   width: 100%;
   object-fit: cover;
   display: block;
+  filter: drop-shadow(1px 1px 1px #a9a9a9);
   
 }
 
+.post:hover .shop-image  {
+  background-color: rgb(0, 0, 255);
+  border: 1px solid black;
+  
+}
+
+.post:hover .shop-image img {
+  filter: drop-shadow(1px 1px 1px rgb(0, 0, 155) );
+  
+}
 
 .filter-item a {
     display: block;
@@ -341,33 +362,15 @@ a:link {
 
 }
 
-.filter-item .year {
-    grid-column: 1;
-    text-align: left;
-    font-family: var(--menu-font-family);
-    font-style: var(--menu-font-style);
-    font-size: var(--font-size-small);
-    font-weight: 300;
-    color: var(--primary-color);
-}
 
-.filter-item:hover .year {
-    text-align: left;
-    font-family: var(--menu-font-family);
-    font-style: var(--menu-font-style);
-    font-size: var(--font-size-small);
-    font-weight: 300;
-    color: var(--primary-color);
-
-}
 
 .filter-item .info {
     display: flex;
-    grid-column: 2/span 9;
+    grid-column: 1/span 10;
   width: 100%;
 }
 
-.filter-item .category {
+.filter-item .price {
     
     text-align: left;
     font-family: var(--menu-font-family);
@@ -381,7 +384,7 @@ a:link {
 }
 
 
-.filter-item:hover .category {
+.filter-item:hover .price {
     text-align: left;
     font-family: var(--menu-font-family);
     font-style: var(--menu-font-style);
@@ -415,7 +418,7 @@ a:link {
 }
 
 .filter-item .title {
-    grid-column: 2/span 9;
+    grid-column: 1/span 10;
     text-align: left;
     font-family: var(--menu-font-family);
     font-style: var(--menu-font-style);
@@ -425,11 +428,9 @@ a:link {
 }
 
 .filter-item:hover .title {
-    font-family: var(--menu-font-family);
-    font-style: var(--menu-font-style);
-    font-size: var(--font-size-extra-large);
+    
     color: blue;
-    /*filter: blur(1px);*/
+    
 }
 
 .filter-item .list-description {
@@ -541,7 +542,7 @@ a:link {
 /* MENU 2 */
 
 .menu-2 {
-    width: 75%;
+    width: 99%;
     font-family: var(--menu-font-family);
     font-style: var(--menu-font-style);
     font-size: var(--font-size-medium);
@@ -574,7 +575,7 @@ a:link {
     display: flex; 
 align-items: center;
     cursor: pointer;
-    width: 120px;
+    width: 100px;
     
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -661,22 +662,18 @@ align-items: center;
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   *:has([value="all"]:checked) .filters [for="all"],
   *:has([value="essay"]:checked) .filters [for="essay"],
-  *:has([value="podcast"]:checked) .filters [for="podcast"],
-  *:has([value="project"]:checked) .filters [for="project"],
-  *:has([value="newsletter"]:checked) .filters [for="newsletter"],
-  *:has([value="editorial"]:checked) .filters [for="editorial"],
-  *:has([value="interview"]:checked) .filters [for="interview"] {
+  *:has([value="book"]:checked) .filters [for="book"],
+  *:has([value="print"]:checked) .filters [for="print"],
+  *:has([value="object"]:checked) .filters [for="object"] {
     background: var(--green);
     color: var(--white);
   }
   
   *:has([value="all"]:checked) .posts [data-category],
   :has([value="essay"]:checked) .posts [data-category~="essay"],
-  *:has([value="podcast"]:checked) .posts [data-category~="podcast"],
-  *:has([value="project"]:checked) .posts [data-category~="project"],
-  *:has([value="newsletter"]:checked) .posts [data-category~="newsletter"],
-  *:has([value="editorial"]:checked) .posts [data-category~="editorial"],
-  *:has([value="interview"]:checked) .posts [data-category~="interview"] {
+  *:has([value="book"]:checked) .posts [data-category~="book"],
+  *:has([value="print"]:checked) .posts [data-category~="print"],
+  *:has([value="object"]:checked) .posts [data-category~="object"] {
     display: block;
   }
 

@@ -1,0 +1,560 @@
+.top-bar {
+    height: min-content;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    z-index: 10;
+    border-bottom: 1px solid white;
+}
+
+.menu-page-description {
+    float: right;
+    font-weight: 300;
+    margin-right: 0;
+    cursor: default;
+}
+
+
+
+.project-page {
+    z-index: 1;
+    
+    position: relative;
+    width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        margin-top: 100px;
+        
+        padding-bottom: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px;
+    gap: 30px;
+
+
+}
+
+.wrapper {
+    view-timeline-name: --logo-size;
+}
+
+.logotype-container {
+    animation: size-change linear both 1s ;
+	animation-timeline: scroll();
+    width: 250px;
+}
+/*
+
+@keyframes size-change {
+	0%  { width: 250px; }
+    
+    80% { width: 150px; }
+    100% { width: 150px; }
+}
+
+
+.menu-1 {
+    
+    animation: menu-font-change linear both 1s ;
+    animation-timeline: scroll();
+    
+}
+
+@keyframes menu-font-change {
+	0%{ color: var(--primary-color); height: auto; margin-top: 20px; }
+    15% { color: var(--primary-color); height: auto; margin-top: 20px; }
+	25% { margin-top: 10px;}
+	50% {  height: 10px; margin-top: 5px; pointer-events: none; color: black; }
+	75% {  height: 5px; margin-top: 0px; color: black; }
+    90% { height: 0px; margin-top: 0px; color: black;}
+    100% { height: 0px; margin-top: 0px; color: black;}
+}
+
+
+.menu-link a {
+    
+    animation: menu-link-change linear both 1s ;
+    animation-timeline: scroll();
+    
+}
+
+
+
+@keyframes menu-link-change {
+	0%{ pointer-events: all; color: white;}
+    15% { pointer-events: all; color: white; }
+	25% { pointer-events: all; }
+	50% { pointer-events: none; color: black;}
+	75% { pointer-events: none; color: black;}
+    100% { pointer-events: none;color: black;}
+}
+
+.menu-1  .menu-link:hover a {
+    color: blue;
+}
+
+.menu-link:hover a {
+    
+    animation: menu-link-change-hover linear both 1s ;
+    animation-timeline: scroll();
+    
+}
+
+
+@keyframes menu-link-change-hover {
+	0%{ pointer-events: all; color: blue;}
+    15% { pointer-events: all; color: blue; }
+	25% { pointer-events: all; }
+	50% { pointer-events: none; color: black;}
+	75% { pointer-events: none; color: black;}
+    100% { pointer-events: none;color: black;}
+}
+
+
+
+
+
+
+
+
+.bypass-logotype path,
+.bypass-logotype polygon   {
+    animation: bypass-colour-change linear both 1s ;
+    animation-timeline: --logo-size;
+}
+
+svg  {
+    animation: bypass-colour-change linear both 1s ;
+    animation-timeline: --logo-size;
+}
+
+@keyframes bypass-colour-change {
+	-15%{ pointer-events: all; }
+    15% { pointer-events: all;  }
+	25% { pointer-events: all; }
+	50% {  pointer-events: none;}
+	75% { pointer-events: none; }
+    99% { pointer-events: none; }
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+   .menu-page-description {
+    visibility: hidden;
+   }
+
+   .project-page {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+   }
+}
+*/
+
+
+
+/* WRAPPER */
+.wrapper {
+    width: calc(100vw - 60px);
+    height: 100vh;
+    position:relative;
+   background-color: black;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+
+    }
+    /* WRAPPER end */
+
+.page-border {
+    
+    border-top: black; 
+    border-left: black; 
+    border-right: black; 
+     z-index: 9999;
+    pointer-events: none;
+    
+  }
+
+
+.top-bar {
+  width: calc(100% - 60px);
+}
+/* SHOP PAGES */
+
+div.menu-1 {
+    color: white;
+}
+
+
+a:visited {
+    color:white;
+}
+
+
+.shop-page-title {
+    text-align: left;
+    font-family: var(--menu-font-family);
+    font-style: var(--menu-font-style);
+    font-size: var(--font-size-extra-large);
+    color: white;
+}
+
+.shop-page-author {
+    max-width: 600px;
+    font-family: var(--menu-font-family);
+    font-weight: 300;
+    font-size: var(--font-size-medium);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    
+    cursor: default;
+}
+
+.shop-page-price {
+    font-family: var(--menu-font-family);
+    font-weight: 300;
+    font-size: var(--font-size-large);
+    color: white;
+    padding-bottom: 20px;
+    line-height: 1.4;
+    cursor: default;
+}
+
+.shop-button {
+    width: 125px;
+    padding-top: 5px ;
+    padding-bottom: 5px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: var(--menu-font-family);
+    font-weight: 300;
+    font-size: var(--font-size-medium);
+    color: white;
+    background-color: black;
+    border: white solid 1px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+a:link {
+    color: white;
+}
+
+.shop-button:hover {
+    background-color: rgb(0, 0, 255) ;
+    color: white;
+}
+
+.shop-page-body {
+    max-width: 600px;
+    font-family: var(--menu-font-family);
+    font-weight: 300;
+    font-size: var(--font-size-medium);
+    color: white;
+    padding-bottom: 20px;
+    line-height: 1.4;
+    cursor: default;
+}
+
+.shop-page-details {
+    max-width: 600px;
+    font-family: var(--menu-font-family);
+    font-weight: 300;
+    font-size: var(--font-size-small);
+    color: white;
+    padding-bottom: 20px;
+    line-height: 1.4;
+    cursor: default;
+}
+
+#shop-page-link {
+    font-weight:  400;
+}
+
+.shop-page-img {
+    object-fit: contain; 
+    width: 100%;
+    margin-bottom: 1rem;
+    border: white 1px solid;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flier-flower-1 {
+	pointer-events: none;
+    
+}
+
+.flier-flower-1 > * {
+/* Adjust animation duration to change the element’s speed */
+        animation: fly 200s linear infinite;
+        pointer-events: none !important;
+	top: 0;
+	left: 0;
+	transform: translateX(-120%) translateY(-30%) rotateZ(0);
+	position: fixed;
+	animation-delay: -20s;
+	z-index: 999999;
+}
+
+ /* Keyframe values control where the element will begin
+    and end its trajectory across the screen. Each rule
+    represents a path the element follows across the screen. */
+
+
+@keyframes fly {
+
+	98.001%, 0% {
+                display: block;
+		transform: translateX(-100%) translateY(100vh) rotateZ(0deg)
+	}
+
+	15% {
+		transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+	}
+
+	15.001%, 18% {
+		transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+	}
+
+	40% {
+		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+	}
+
+	40.001%, 43% {
+		transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+	}
+
+	65% {
+		transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+	}
+
+	65.001%, 68% {
+		transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+	}
+
+	95% {
+		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+	}
+}
+
+.flier-flower-2 {
+	pointer-events: none;
+    
+}
+
+.flier-flower-2 > * {
+/* Adjust animation duration to change the element’s speed */
+        animation: fly 100s linear infinite;
+        pointer-events: none !important;
+	top: 50;
+	left: 100;
+	transform: translateX(-120%) translateY(-30%) rotateZ(0);
+	position: fixed;
+	animation-delay: -30s;
+	z-index: 999999;
+}
+
+.flier-flower-3 {
+	pointer-events: none;
+    
+}
+
+.flier-flower-3 > * {
+/* Adjust animation duration to change the element’s speed */
+        animation: fly 200s linear infinite;
+        pointer-events: none !important;
+	top: 50;
+	left: 100;
+	transform: translateX(-120%) translateY(-30%) rotateZ(0);
+	position: fixed;
+	animation-delay: -60s;
+	z-index: 999999;
+}
+
+.flier-flower-4 {
+	pointer-events: none;
+    
+}
+
+.flier-flower-4 > * {
+/* Adjust animation duration to change the element’s speed */
+        animation: fly 180s linear infinite;
+        pointer-events: none !important;
+	top: 50;
+	left: 100;
+	transform: translateX(-120%) translateY(-30%) rotateZ(0);
+	position: fixed;
+	animation-delay: -120s;
+	z-index: 999999;
+}
+
+.flier-flower-5 {
+	pointer-events: none;
+    
+}
+
+.flier-flower-5 > * {
+/* Adjust animation duration to change the element’s speed */
+        animation: fly 190s linear infinite;
+        pointer-events: none !important;
+	top: 50;
+	left: 100;
+	transform: translateX(-120%) translateY(-30%) rotateZ(0);
+	position: fixed;
+	animation-delay: -180s;
+	z-index: 999999;
+}
+
+.flier-flower-6 {
+	pointer-events: none;
+    
+}
+
+.flier-flower-6 > * {
+/* Adjust animation duration to change the element’s speed */
+        animation: fly 150s linear infinite;
+        pointer-events: none !important;
+	top: 50;
+	left: 100;
+	transform: translateX(-120%) translateY(-30%) rotateZ(0);
+	position: fixed;
+	animation-delay: -300s;
+	z-index: 999999;
+}
+
+.flier-flower-7 {
+	pointer-events: none;
+    
+}
+
+.flier-flower-7 > * {
+/* Adjust animation duration to change the element’s speed */
+        animation: fly 75s linear infinite;
+        pointer-events: none !important;
+	top: 50;
+	left: 100;
+	transform: translateX(-120%) translateY(-30%) rotateZ(0);
+	position: fixed;
+	animation-delay: -80s;
+	z-index: 999999;
+}
+
+.flier-flower-8 {
+	pointer-events: none;
+    
+}
+
+.flier-flower-8 > * {
+/* Adjust animation duration to change the element’s speed */
+        animation: fly 75s linear infinite;
+        pointer-events: none !important;
+	top: 50;
+	left: 100;
+	transform: translateX(-120%) translateY(-30%) rotateZ(0);
+	position: fixed;
+	animation-delay: -45s;
+	z-index: 999999;
+}
+
+.flier-flower-9 {
+	pointer-events: none;
+    
+}
+
+.flier-flower-9 > * {
+/* Adjust animation duration to change the element’s speed */
+        animation: fly 200s linear infinite;
+        pointer-events: none !important;
+	top: 50;
+	left: 100;
+	transform: translateX(-120%) translateY(-30%) rotateZ(0);
+	position: fixed;
+	animation-delay: -176s;
+	z-index: 999999;
+}
+
+.flier-flower-10 {
+	pointer-events: none;
+    
+}
+
+.flier-flower-10 > * {
+/* Adjust animation duration to change the element’s speed */
+        animation: fly 180s linear infinite;
+        pointer-events: none !important;
+	top: 50;
+	left: 100;
+	transform: translateX(-120%) translateY(-30%) rotateZ(0);
+	position: fixed;
+	animation-delay: -260s;
+	z-index: 999999;
+}
+
+.flier-flower-11 {
+	pointer-events: none;
+    
+}
+
+.flier-flower-11 > * {
+/* Adjust animation duration to change the element’s speed */
+        animation: fly 185s linear infinite;
+        pointer-events: none !important;
+	top: 50;
+	left: 100;
+	transform: translateX(-120%) translateY(-30%) rotateZ(0);
+	position: fixed;
+	animation-delay: -20s;
+	z-index: 999999;
+}
+
+.flier-flower-12 {
+	pointer-events: none;
+    
+}
+
+.flier-flower-12 > * {
+/* Adjust animation duration to change the element’s speed */
+        animation: fly 220s linear infinite;
+        pointer-events: none !important;
+	top: 50;
+	left: 100;
+	transform: translateX(-120%) translateY(-30%) rotateZ(0);
+	position: fixed;
+	animation-delay: -90s;
+	z-index: 999999;
+}
+
+.flier-flower-13 {
+	pointer-events: none;
+    
+}
+
+.flier-flower-13 > * {
+/* Adjust animation duration to change the element’s speed */
+        animation: fly 300s linear infinite;
+        pointer-events: none !important;
+	top: 50;
+	left: 100;
+	transform: translateX(-120%) translateY(-30%) rotateZ(0);
+	position: fixed;
+	animation-delay: -130s;
+	z-index: 999999;
+}
