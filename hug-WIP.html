@@ -46,10 +46,10 @@
 
 
   <!-- [CUSTOM CSS FOR THIS PAGE] -->
-  <style>
+  
+<style>
 
-
-.jwu-body {
+  .jwu-body {
     font-family: "Open Sans", sans-serif;
     font-size: 3.5rem;
     font-style: normal;
@@ -58,46 +58,60 @@
     color: var(--primary-color);
 }
 
-.martel-header {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 2.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.4;
-    color: #a68bed;
+  .jwu-hover-word {
+    text-decoration: underline;
+  }
+
+
+.jwu-hover-word {
+    display: inline;
+    pointer-events: auto;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
-.martel-author {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 1.1rem;
-    font-style: normal;
-    font-weight: 300;
-    color: #a68bed;
+.jwu-hover-image {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity  ease, visibility  ease;
+    transition-delay: 0.3s;
+}
+
+body .jwu-hover-word:hover+.jwu-hover-image {
+    opacity: 1;
+  visibility: visible;
+    pointer-events: none;
+    transition-delay: 0s; 
 
 }
 
-.martel-caption {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 0.85rem;
-    line-height: 1.4;
-    font-family: "Space Grotesk", Icons;
-    font-style: normal;
-    font-weight: 300;
-    color: var(--primary-color);
+.jwu-hover-image {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    pointer-events: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    /* Change width and height to scale images */
+    width: 70vh;
+    
 }
 
-.martel-img {
-    object-fit: contain; 
-    width: 100%;
-    margin-bottom: 1rem;
+.jwu-hover-image img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    margin-bottom: 0;
 }
-
-
-
-
-  </style>
-  <!-- [CUSTOM CSS FOR THIS PAGE] -->
-
+</style>
+  
 </head>
 
 
@@ -205,82 +219,35 @@
         I’m sure things will<br>
         fall into place<br>
         eventually. <br>
-      </p>
-
-
-      <p class="martel-body" style="grid-column: 3 / span 4; grid-row: 7 / span 1;" >
-      I only consciously realised this was the way I worked while designing a market hall this year. I had painted the
-      building purple, made the plinth from cheesecake, used vegetables to simulate greenery and placed images of myself in
-      the renders. All of these additions were used to cover what was a very serious building. At my final presentation the
-      critics spent all of the time arguing whether the building was actually purple or not. The confusion was rather funny -
-      a simple choice of paint threw the group into a heated debate over something so insignificant. I am still unsure whether
-      this was a positive outcome or not. I certainly learnt the power of representation, and I think the turbulence that
-      arose out of my purple building was very interesting. It briefly turned an austere event into one where people were
-      getting very animated, with sniggers and smiles across the room. For a brief period, people forgot to be serious.
-      </p>
-
-      <div style="grid-column: 7 / span 4; grid-row: 7 / span 1;">
-        <img class="martel-img" " src="resources/images/2021.12.17-MARTEL/martel-02.jpg" >
-        
-        <p class="martel-caption">The base of the model was initially made from cheesecake. But, whilst I was away, a local
-          swarm of ants broke into our garage and partially consumed it. The model was to be exhibited in Paihia meaning a new,
-          less edible, base had to be built.</p>
-      </div>
-
-      <div style="grid-column: 2 / span 10; grid-row: 9 / span 1;">
-        <img class="martel-img" " src="resources/images/2021.12.17-MARTEL/martel-03.jpg" >
-      </div>
-     
-      <p class="martel-caption" style="grid-column: 3 / span 4; grid-row: 10 / span 1; margin-top: -30px;" >
-      The market hall is a dynamic structure, adjustable depending on its use. In fine weather the sixteen doors of the hall
-      may be opened, panels flipped down, and awnings drawn out to form outdoor market stalls. The roof is a community
-      vegetable demonstration garden which supplies the permanent stalls with some of its produce.
-      </p>
-
-      <div style="grid-column: 3 / span 4; grid-row: 12 / span 1;">
-        <img class="martel-img" " src="resources/images/2021.12.17-MARTEL/martel-04.jpg" >
-        
-        <p class="martel-caption"><i>A Building for Sundays</i> proposed a collection of theatres and galleries to form the civic
-          centre of a new urban development. The exterior of the building was clad in aluminium, reflecting the bright colours
-          of the surrounding flora.</p>
-      </div>
-
-
-      <p class="martel-body" style="grid-column: 7 / span 4; grid-row: 12 / span 1;" >
-      Another, more recent project, A Building for Sundays, folded joy into the design process from the outset. Using simple
-      forms, the civic centre took on a playful and charismatic persona. The large saw-tooth roofs coupled with the glimmering
-      aluminium cladding gave the building a child-like optimism, and I am often asked if the building is a school. Of course,
-      representation still played an important role, but here it elevated what was already there rather than run in contrast
-      to the architecture. The building was the focus of the image, rather than everything else. This project was presented on
-      Zoom, so I can’t compare the reactions to the purple project. There weren’t any animated debates, sniggers, or confused
-      silences. This project drifted back towards the expected, and once again I am unsure how to feel about this. The line
-      between controversial and mundane seems blurry, and is in a different place for everyone.
+        <br>
+        Though,<br>
+        until that happens<br>
+        (and I promise it will)<br>
+        Do offer them a hug<br>
+        every once in a while.<br>
+        The best place<br>
+        In the world..<br>
+        Is formed <br>
+        <span class="jwu-hover-word">inside a hug.</span>
+        <img class="jwu-hover-image" src="resources/images/2021-hug/jwu-hug-1.gif"></img><br>
+        <br>
+        Annnnnyways…<br>
+        <br>
+        Hi.<br>
+        My name is Jack,<br>
+        and this project<br>
+        is simPly about<br>
+        Freedom.<br>
+        <br>
+        (..and totally my opinion about it)<br>
+        <br>
       </p>
 
       
 
-      <p class="martel-body" style="grid-column: 3 / span 4; grid-row: 14 / span 1;" >
-      What I do know for sure is that these two projects seem to be better received by my non-architect friends and family. In
-      many cases the conversations begin with laughter or intrigue, but quickly progress into serious discussions over the
-      practicalities of market stalls or the planning of theatres. Because, after all, architecture is a serious business and
-      I don’t have a problem with that. I’m not naive enough to think that all of its issues can be solved by putting a giant
-      asparagus in a render. I just think we would have better buildings if we got up from our Eames office chairs, kicked off
-      our RM Williams, and had more fun with what we all love to do.
-      </p>
 
-      <p class="martel-caption" style="grid-column: 7 / span 4; grid-row: 16 / span 1;" >
-      <span style="font-weight: 400;">Will Martel</span> recently completed the first year of his MArch(Prof) degree at the University of Auckland. He likes
-      architecture! The two projects featured were produced as part of Advanced Design 1 and 2 papers during 2021.
-      </p>
 
-      <div style="grid-column: 7 / span 4; grid-row: 14 / span 1;">
-        <img class="martel-img" " src="resources/images/2021.12.17-MARTEL/martel-06.jpg" >
-        
-        <p class="martel-caption"><i>The entrance for this building blurs the threshold between indoor and outdoor occupation.
-            The space fosters joy, children hurtling down the slide, flowers blooming under the reflected ceiling, people
-            hurtling through on their way out into the landscape.</p>
-          
-      </div>
+
 
       
       
