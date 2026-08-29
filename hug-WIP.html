@@ -41,77 +41,80 @@
   <!-- [CUSTOM FONTS] -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
   <!-- [CUSTOM FONTS] -->
 
 
   <!-- [CUSTOM CSS FOR THIS PAGE] -->
-  
-<style>
 
-  .jwu-body {
-    font-family: "Open Sans", sans-serif;
-    font-size: 3.5rem;
-    font-style: normal;
-    font-weight: 425;
-    line-height: 1.4;
-    color: var(--primary-color);
-}
+  <style>
+    .jwu-body {
+      font-family: "Open Sans", sans-serif;
+      font-size: 3.5rem;
+      font-style: normal;
+      font-weight: 425;
+      line-height: 1.4;
+      color: var(--primary-color);
+    }
 
-  .jwu-hover-word {
-    text-decoration: underline;
-  }
+    .jwu-hover-word {
+      text-decoration: underline;
+    }
 
 
-.jwu-hover-word {
-    display: inline;
-    pointer-events: auto;
-    cursor: pointer;
-    text-decoration: underline;
-}
+    .jwu-hover-word {
+      display: inline;
+      pointer-events: auto;
+      cursor: pointer;
+      text-decoration: underline;
+    }
 
-.jwu-hover-image {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity  ease, visibility  ease;
-    transition-delay: 0.3s;
-}
+    .jwu-hover-image {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity ease, visibility ease;
+      transition-delay: 0.3s;
 
-body .jwu-hover-word:hover+.jwu-hover-image {
-    opacity: 1;
-  visibility: visible;
-    pointer-events: none;
-    transition-delay: 0s; 
+    }
 
-}
+    body .jwu-hover-word:hover+.jwu-hover-image {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: none;
+      transition-delay: 0s;
 
-.jwu-hover-image {
-    display: flex;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1001;
-    pointer-events: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
 
-    /* Change width and height to scale images */
-    width: 70vh;
-    
-}
+    }
 
-.jwu-hover-image img {
-    max-width: 100% !important;
-    max-height: 100% !important;
-    width: auto !important;
-    height: auto !important;
-    margin-bottom: 0;
-}
-</style>
-  
+    .jwu-hover-image {
+      display: flex;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1001;
+      pointer-events: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+
+      /* Change width and height to scale images */
+      width: 70vh;
+
+    }
+
+    .jwu-hover-image img {
+      max-width: 100% !important;
+      max-height: 100% !important;
+      width: auto !important;
+      height: auto !important;
+      margin-bottom: 0;
+
+    }
+  </style>
+
 </head>
 
 
@@ -160,17 +163,17 @@ body .jwu-hover-word:hover+.jwu-hover-image {
         <div class="menu-1">
           <ul>
             <li class="menu-link">
-        <a href="/journal">Journal</a>
-      </li>
-      <li class="menu-link" >
-        <a id="list-temp-off" href="/work">Work</a>
-      </li>
-      <li class="menu-link">
-        <a id="list-temp-off"  href="/shop">Shop</a>
-      </li>
-      <li class="menu-link">
-        <a  id="list-temp-off" href="about">About</a>
-      </li>
+              <a href="/journal">Journal</a>
+            </li>
+            <li class="menu-link">
+              <a id="list-temp-off" href="/work">Work</a>
+            </li>
+            <li class="menu-link">
+              <a id="list-temp-off" href="/shop">Shop</a>
+            </li>
+            <li class="menu-link">
+              <a id="list-temp-off" href="about">About</a>
+            </li>
             <!-- [PAGE INFO ABOVE LINE] -->
             <li class="menu-page-description">
               <a style="text-align: right;"><i>Hug?</i> by Jack Wu, January 2021</a>
@@ -201,11 +204,11 @@ body .jwu-hover-word:hover+.jwu-hover-image {
 
 
     <div class="project-page">
-      
 
-      
 
-      <p class="jwu-body" style="grid-column: 4 / span 7; grid-row: 5 / span 1;">
+
+
+      <div class="jwu-body" style="grid-column: 4 / span 5; grid-row: 5 / span 1;">
         Oh hi, you. <br>
         <br>
         Before you read <br>
@@ -241,23 +244,286 @@ body .jwu-hover-word:hover+.jwu-hover-image {
         <br>
         (..and totally my opinion about it)<br>
         <br>
-      </p>
+      </div>
 
-      
+      <div class="jwu-body" style="grid-column: 4 / span 5; grid-row: 7 / span 1; text-align: right;">
+
+        Though, I think at this very moment,<br>
+        like,<br>
+        right now,<br>
+        It's fair to say,<br>
+        You and I are quite spoiled<br>
+        To have freedom -<br>
+        Of choice, expression, voice, thought,<br>
+        movement, belief, assembly…<br>
+        But, because of
+        <span class="jwu-hover-word">social
+
+          —
+
+          <br>
+          <i>media<br>
+            nOrms<br>
+            Standards</i></span>
+        <img class="jwu-hover-image" src="resources/images/2021-hug/jwu-hug-2.gif"></img><br>
+        we are almost expected<br>
+        to choose to<br>
+        Follow these Medias<br>
+        Meet these Standards<br>
+        Live up to these Expectations<br>
+        To own what this Person has<br>
+        In order to stay<br>
+        <span class="jwu-hover-word"><i>In touch<br>
+            Respected<br>
+            Normal.<br>
+            In touch<br>
+            Respected<br>
+            Normal.<br></i></span>
+        <img class="jwu-hover-image" src="resources/images/2021-hug/jwu-hug-3.gif"></img>
+        (repeated, addicted)<br>
+        <br>
+        A Freedom we come into <br>
+        within<br>
+        our current environment.<br>
+        Especially,<br>
+        our urban environment.<br>
+        <br>
+        Consequently,<br>
+        True freedom can really only be found in protection of each other's freedom.<br>
+        And even further,<br>
+        In protection of<br>
+        <span class="jwu-hover-word">All life’s need to<br>
+          flourish.</span>
+        <img class="jwu-hover-image" src="resources/images/2021-hug/jwu-hug-4.jpg"></img>
+          <br>
+        </div>
+
+        <div class="jwu-body" style="grid-column: 4 / span 5; grid-row: 9 / span 1; text-align: left; ">
+
+          <br>
+          This project,<br>
+          When given the opportunity to<br>
+          Design anywhere<br>
+          To do (and be) anything<br>
+          I chose instead<br>
+          an existing site<br>
+          Somewhere that really-<br>
+          really needed<br>
+          <span class="jwu-hover-word">a hug.</span>
+          <div class="jwu-hover-image">{image 5}</div><br>
+          <br>
+        </div>
+
+        <div class="jwu-body" style="grid-column: 4 / span 5; grid-row: 11 / span 1; text-align: right;">
+
+          <br>
+          <span class="jwu-hover-word">St James</span>
+          <div class="jwu-hover-image">{image 6}</div>
+          was a theatre<br>
+          That adapted,<br>
+          Transformed itself to fit in<br>
+          With time.<span class="jwu-hover-word2">*</span>
+          <div class="jwu-hover-image2">{image 35}</div>
+          <br>
+          Now, the fragile skin<span class="jwu-hover-word2">*</span>
+          <div class="jwu-hover-image2">{image 45}</div>
+          <br>
+          Of St James<br>
+          <span class="jwu-hover-word">Sits in silence,</span>
+          <div class="jwu-hover-image">{image 7}</div><span class="jwu-hover-word2">*</span>
+          <div class="jwu-hover-image2">{image 36}</div>
+          <br>
+          With wounds that trace time better than any of<br>
+          the neighbouring tall modern shiny boxes<br>
+          Weakened as the city grew<br>
+          And the eyes<br>
+          <span class="jwu-hover-word">are windows, slammed shut.</span>
+          <div class="jwu-hover-image">{image 8}</div><br>
+          <br>
+          Now it hides behind a mask<br>
+          <span class="jwu-hover-word"><i>Flawed<br>
+              Outcasted<br>
+              Not up to standard.<br></i></span>
+          <div class="jwu-hover-image">{image 9}</div>
+          <br>
+        </div>
+
+        <div class="jwu-body" style="grid-column: 4 / span 5; grid-row: 13 / span 1; ">
+
+          One last face<br>
+          For St James,<br>
+          Between two skins<br>
+          A hug <br>
+          In hopes of it being<br>
+          Restored one day<br>
+          <span class="jwu-hover-word">Soon.</span>
+          <div class="jwu-hover-image">{image 10}</div><br>
+
+        </div>
+
+
+        <div class="jwu-body" style="grid-column: 4 / span 5; grid-row: 15 / span 1; text-align: right;">
+
+          <br>
+          <span class="jwu-hover-word3">An architectural tree hug almost</span>
+          <div class="jwu-hover-image3">{image 11}</div><br>
+          One that takes form<br>
+          From significant existing<span class="jwu-hover-word2">*</span>
+          <div class="jwu-hover-image2">{image 37}</div>
+          <br>
+          <span class="jwu-hover-word">Elements of the facade</span>
+          <div class="jwu-hover-image">{image 12}</div><br>
+          A new skin<br>
+          That
+          <span class="jwu-hover-word">veils away</span>
+          <div class="jwu-hover-image">{image 32}</div>
+          from <br>
+          <span class="jwu-hover-word"><i>Order<br>
+              Surveillance<br>
+              Society</i></span>
+          <div class="jwu-hover-image">{image 13}</div><br>
+          To protect the theatre.<br>
+          <br>
+          <span class="jwu-hover-word">For us to hide, for a moment.</span>
+          <div class="jwu-hover-image">{image 14}</div><br>
+          And there<br>
+          between two skins,<br>
+          <span class="jwu-hover-word3">a space is formed.</span>
+          <div class="jwu-hover-image3">{image 15}</div><br>
+          An in-between space<br>
+          In protection of all life’s <br>
+          need to flourish. <br>
+          Acknowledging that<br>
+          <span class="jwu-hover-word3">nothing is<br>
+            Static.</span>
+          <div class="jwu-hover-image3">{image 16}</div><br>
+          <br>
+          Or alone<br>
+          <span class="jwu-hover-word3">Rather alive</span>
+          <div class="jwu-hover-image3">{image 17}</div><br>
+          Pulsing at many scales<br>
+          Through the relationship of<br>
+          each other and the other.<br>
+          <br>
+          <span class="jwu-hover-word">The more-than-human</span>
+          <div class="jwu-hover-image">{image 18}</div><span class="jwu-hover-word2">*</span>
+          <div class="jwu-hover-image2">{image 38}</div><br>
+          <span class="jwu-hover-word">The architecture</span>
+          <div class="jwu-hover-image">{image 48}</div><span class="jwu-hover-word2">*</span>
+          <div class="jwu-hover-image2">{image 39}</div><br>
+          <span class="jwu-hover-word">The sonic space</span>
+          <div class="jwu-hover-image">{image 20}</div><span class="jwu-hover-word2">*</span>
+          <div class="jwu-hover-image2">{image 40}</div><br>
+          <span class="jwu-hover-word">The human</span>
+          <div class="jwu-hover-image">{image 21}</div><span class="jwu-hover-word2">*</span>
+          <div class="jwu-hover-image2">{image 41}</div><br>
+</div>
+        
+
+        <div class="jwu-body" style="grid-column: 4 / span 5; grid-row: 17 / span 1; " >
+
+            This new facade<br>
+            feeds curiosity <br>
+            Through the <span class="jwu-hover-word">windows</span>
+            <div class="jwu-hover-image">{image 22}</div><br>
+            without giving too much<br>
+            away.<br>
+            Encouraging those low <br>
+            On battery<br>
+            social battery<br>
+            <span class="jwu-hover-word">To hide and recharge</span>
+            <div class="jwu-hover-image">{image 23}</div><br>
+            for a moment.<br>
+            <br>
+            A space that asks<br>
+            Performers to <br>
+            <span class="jwu-hover-word">Stop Performing.</span>
+            <div class="jwu-hover-image">{image 24}</div><br>
+            Unmask <br>
+            In order to embrace<br>
+            the space<br>
+            the hug<br>
+            and everything that makes up<br>
+            this hug,<br>
+            <span class="jwu-hover-word">including yourself.</span>
+            <div class="jwu-hover-image">{image 25}</div><br>
+            <br>
+            As the architecture<br>
+            Tempts you<br>
+            To <span class="jwu-hover-word">make noise</span>
+            <div class="jwu-hover-image">{image 26}</div><br>
+            From the tap dancing <br>
+            Floors<br>
+            To the echoing sonic<br>
+            <span class="jwu-hover-word">Corridors</span>
+            <div class="jwu-hover-image">{image 27}</div><br>
+            That conducts<br>
+            And therefore <span class="jwu-hover-word">resurrects</span>
+            <div class="jwu-hover-image">{image 28}</div><br>
+            the heart and soul of<br>
+            St James.<br>
+            The pulse<br>
+            that is, <br>
+            <span class="jwu-hover-word">the Hug.</span>
+            <div class="jwu-hover-image">{image 29}</div><br>
+            <br>
+            This Hug, <br>
+            <span class="jwu-hover-word">will not last forever.</span>
+            <div class="jwu-hover-image">{image 30}</div><br>
+            The aging materials <br>
+            become the instrument<br>
+            that measures <br>
+            <span class="jwu-hover-word">the time that is left.</span>
+            <div class="jwu-hover-image">{image 31}</div><br>
+            <br>
+            This Hug,<br>
+            will not last forever,<br>
+            Because it cannot be<span class="jwu-hover-word2">*</span>
+            <div class="jwu-hover-image2">{image 42}</div><br>
+            owned by Anyone,<span class="jwu-hover-word2">*</span>
+            <div class="jwu-hover-image2">{image 43}</div><br>
+            because freedom<span class="jwu-hover-word2">*</span>
+            <div class="jwu-hover-image2">{image 44}</div><br>
+            Is the enemy of Possession<br>
+            And Possession <br>
+            equals Permanence. <br>
+            <br>
+            Oh, and hey,<br>
+            before you keep<br>
+            <i>
+                scrolling<br>
+                tapping<br>
+                swiping<br>
+            </i>
+            I hope you are doing well too. I hope that you had a wonderful new years and that 2022 will bring out a
+            <strike>new</strike> better -<br>
+            you.<br>
+            And, much like spotify<br>
+            Don’t be afraid to look back.<br>
+            To stop performing <br>
+            even just for a moment. <br>
+            <br>
+            To unmask your <a id="jwu-link" href="https://www.youtube.com/watch?v=bBPFhZuSpqQ" target="_blank"><span
+                    class="jwu-hover-word">facade</span></a>.<br>
+            <br>
+            Kind wishes,<br>
+            <br>
+            <span class="jwu-hover-word">J.</span>
+            <div class="jwu-hover-image">{image 49}</div>
+
+            </div>
 
 
 
 
 
-      
-      
-     
-
-    
 
 
 
 
+
+
+</div>
 
 
 
